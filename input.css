@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Yekan';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/font/Yekan.ttf'), url('./assets/font/Yekan.woff');
+}
+@font-face {
+    font-family: 'Yekan-Regular';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/font/yekan-regular.ttf'), url('./assets/font/yekan-regular.woff');
+}
+
+body {
+    direction: rtl;
+    font-family: 'Yekan-Regular';
+}
+
+@layer base {
+    .swiper-wrapper{
+        width: 50%;
+        height: max-content;
+        position: relative;
+        transition-timing-function: linear !important;
+    }
+}
